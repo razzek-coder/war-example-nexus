@@ -13,7 +13,7 @@ pipeline {
 
       steps {
         // war-example-0.0.1.war
-        sh 'mvn -B -q -DaltDeploymentRepository=nexus-releases::http://nexus:8081/nexus/content/repositories/releases clean deploy'
+        sh 'mvn -B -q -DaltDeploymentRepository=nexus-releases::http://localhost:8081/nexus/content/repositories/releases clean deploy'
       }
     }
   }
